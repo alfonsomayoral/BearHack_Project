@@ -1,0 +1,4 @@
+serial
+opencv-python
+mediapipe
+numpy==2.0.2
