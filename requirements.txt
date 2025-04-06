@@ -2,3 +2,4 @@ serial
 opencv-python
 mediapipe
 numpy==2.0.2
+python==3.10
