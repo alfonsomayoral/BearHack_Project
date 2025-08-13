@@ -25,7 +25,8 @@ def findAngle(x1, y1, x2, y2):
 arduino_input = "output.txt"
 
 # Arduino connection
-arduino = serial.Serial('COM3', 9600)
+#Modify the COM port as per your system
+arduino = serial.Serial('COM4', 9600)
 time.sleep(2)
 
 # Visuals
@@ -149,7 +150,7 @@ try:
             cv2.putText(image, 'Good Posture', (10, height - 20), font, 1.2, green, 3)
 
         with open(arduino_input, "w") as f:
-            if bad_time > 2:
+            if bad_time > 1:
                 # Add errors when switch
                 if should_buzz == "0":
                     total_errors += 1
